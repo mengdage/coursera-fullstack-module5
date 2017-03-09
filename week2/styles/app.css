@@ -1,0 +1,45 @@
+.emptyMessage {
+  font-weight: bold;
+  color: red;
+  font-size: 2em;
+  text-align: center;
+}
+#toBuyPage h2, #boughtPage h2{
+  padding-top: 20px;
+}
+#toBuyPage, #boughtPage{
+  color: #FFF;
+  min-height: 500px;
+  margin: 0 auto;
+  width: 99%;
+  padding: 0;
+  border-radius: 5px;
+}
+#toBuyPage {
+  background-color: #444;
+}
+#boughtPage {
+  background-color: #444;
+}
+#toBuyList, #boughtList {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+  border-bottom: 1px solid #777;
+  font-size: 1.2em;
+  padding: 10px;
+  position: relative;
+}
+#toBuyList li {
+  background-color: #f47442;
+}
+#boughtList li{
+  background-color: #14b512;
+}
+li > a {
+  position: absolute;
+  right: 10px;
+  font-size: 1.5em;
+
+}
