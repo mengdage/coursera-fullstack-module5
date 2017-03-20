@@ -1,4 +1,32 @@
+h1 {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
 .error {
   color: #F00;
   display: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+menu-result#result{
+  display: block;
+  width: 95%;
+  min-height: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #EEE;
+  border-radius: 10px;
+}
+
+menu-result .resultOutput {
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
+menu-result td a {
+  text-decoration: none;
 }

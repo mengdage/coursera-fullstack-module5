@@ -2,15 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script type="text/javascript" src="scripts/jquery-3.2.0.min.js"> </script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"> </script>
     <script type="text/javascript" src="scripts/angular.min.js"> </script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/app.css">
     <title>menu finder</title>
   </head>
   <body ng-app="MenuFinderApp">
     <h1>Menu Finder</h1>
-    <div ng-controller="MenuFinderController as finder">
-      <input ng-model="finder.keywords" type="text" name="userInput" placeholder="input some keywords">
-      <button ng-click="finder.narrowDown();" type="button" name="button">Narrow It Downn For Me!</button>
-      <menu-result menu-items="finder.items" delete-item="finder.deleteItem(index)"></menu-result>
+    <div class="container">
+      <div id="finder" ng-controller="MenuFinderController as finder">
+
+        <form class="" action="" method="">
+          <div class="form-group">
+            <input class="form-control" ng-model="finder.keywords" type="text" name="userInput" placeholder="input some keywords">
+          </div>
+          <button ng-click="finder.narrowDown();" class="btn btn-default" type="button" name="narrowDownButton">Narrow It Downn For Me!</button>
+
+        </form>
+
+        <menu-result id="result" menu-items="finder.items" delete-item="finder.deleteItem(index)"></menu-result>
+
+      </div>
 
     </div>
 

@@ -1,5 +1,11 @@
-<h2>result list</h2>
-<ul>
-  <li ng-repeat="item in resultList.menuItems">{{item.name}} |  {{item.short_name}} | {{item.description}}<button ng-click="resultList.deleteItem({index: $index})" type="button" name="deleteItem">Don't want this one!</button></li>
+<table class="resultOutput table table-striped">
+  <tr ng-repeat="item in resultList.menuItems">
+    <td class="col-xs-3 col-md-2">{{item.name}}</td>
+    <td class="col-xs-2 col-md-2 text-center">{{item.short_name}}</td>
+    <td class="col-xs-5 col-md-5">{{item.description}}</td>
+    <td class="col-xs-2 col-md-3 text-right">
+      <a href= "" ng-click="resultList.deleteItem({index: $index})" type="button" name="deleteItem"><span class="glyphicon glyphicon-trash"></span>Don't want this one!</a>
+    </td>
+  </tr>
 </ul>
-<div class="error"> Nothing found </div>
+<div class="error text-center"> Nothing found </div>
