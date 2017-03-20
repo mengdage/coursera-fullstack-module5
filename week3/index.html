@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="scripts/angular.min.js"> </script>
+    <title>menu finder</title>
+  </head>
+  <body ng-app="MenuFinderApp">
+    <h1>Menu Finder</h1>
+    <div ng-controller="MenuFinderController as finder">
+      <input ng-model="finder.keywords" type="text" name="userInput" placeholder="input some keywords">
+      <button ng-click="finder.narrowDown();" type="button" name="button">Narrow It Downn For Me!</button>
+      <menu-result menu-items="finder.items" delete-item="finder.deleteItem(index)"></menu-result>
+
+    </div>
+
+    <script type="text/javascript" src="scripts/app.js"> </script>
+  </body>
+</html>
