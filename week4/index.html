@@ -2,17 +2,26 @@
 <html ng-app="MenuApp">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MenuList</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Menu Application</h1>
+    <div class="container">
+    <h1 class="text-center">Menu Application</h1>
 
     <ui-view></ui-view>
     <loading-spinner></loading-spinner>
+
+    </div>
     <!-- libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="lib/angular.min.js"> </script>
     <script type="text/javascript" src="lib/angular-ui-router.min.js"> </script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"> </script>
+
 
     <!-- module -->
     <script type="text/javascript" src="src/menuapp.module.js"> </script>

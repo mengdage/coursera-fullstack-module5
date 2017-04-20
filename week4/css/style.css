@@ -1,5 +1,40 @@
+*{
+  box-sizing: border-box;
+}
 .loadingIcon {
   position: absolute;
-  top: 10px;
+  top: 40%;
   left: 50%;
+}
+
+categories-list ul{
+  /*width: 70%; margin: 10px auto;*/
+  padding: 0;
+}
+categories-list li{
+  list-style-type: none;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  text-align: center;
+  /*margin: 10px;*/
+  padding: 10px;
+  background-color: #c7d4e8;
+}
+categories-list li:hover {
+  box-shadow: 1px 1px 4px 2px #b2b5ba;
+  cursor: pointer;
+}
+categories-list li a:hover {
+  text-decoration: none;
+}
+
+items-list ul {
+  padding: 0;
+}
+items-list li{
+  list-style-type: none;
+  border: 1px solid #efefef;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
