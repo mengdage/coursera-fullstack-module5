@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>MenuList</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <h1>Menu Application</h1>
 
     <ui-view></ui-view>
+    <loading-spinner></loading-spinner>
     <!-- libraries -->
     <script type="text/javascript" src="lib/angular.min.js"> </script>
     <script type="text/javascript" src="lib/angular-ui-router.min.js"> </script>
@@ -15,6 +17,7 @@
     <!-- module -->
     <script type="text/javascript" src="src/menuapp.module.js"> </script>
     <script type="text/javascript" src="src/data.module.js"> </script>
+    <script type="text/javascript" src="src/spinner.module.js"> </script>
 
     <!-- routes -->
     <script type="text/javascript" src="src/routes.js"> </script>
@@ -25,6 +28,8 @@
     <script type="text/javascript" src="src/categoriesState.controller.js"> </script>
     <script type="text/javascript" src="src/categoryItems.controller.js"> </script>
     <script type="text/javascript" src="src/items.component.js"> </script>
+    <script type="text/javascript" src="src/spinner.component.js">
+    </script>
 
   </body>
 </html>
